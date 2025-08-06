@@ -1,0 +1,16 @@
+HTML
+there are elements(both opening and closing) ,tags (anyone) and attributes 
+The sentence that we write on the space is written as the same
+ATTRIBUTES (<element attribute> text </element> ) if text is not included then no need to close by /
+elements       ATTRIBUTES 
+doctype html  
+html
+head
+title
+body        
+headings (6)   styles="property:value"( property like color ,font size ,background color),title 
+parapragh      same
+a             href
+img           src,alt,height,width
+hr(visible line)
+br(line break)
