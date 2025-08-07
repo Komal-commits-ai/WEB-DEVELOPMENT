@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <h1 style="color:blueviolet">STUDENT REGISTRATION FORM</h1>
+    <label>Roll no:  
+     <input type="text" placeholder="write your roll number" name="rollno">
+    </label>
+    <br><br>
+   <label>Student name:
+    <input  type="text" placeholder="write your first name"  name="firstname"> - 
+    <input  type="text" placeholder="write your second name"  name="second name">
+   </label>
+   <br><br>
+   <label>Mobile no:
+    <input type="text" value="+92" name="mobile no" disabled > - 
+    <input type="text"  name="mobile no" >  
+   </label>
+   <br><br>
+   Gender:
+   <label>
+    <input type="radio" name="Gender" value="Female">female
+   </label>
+   <label>
+    <input type="radio" name="Gender" value="Male">male
+   </label>
+   <br><br>
+   Department:
+   <label>
+    <input type="checkbox" name="Dpt" value="CS">
+    CS
+   </label>
+    <label>
+    <input type="checkbox" name="Dpt" value="SE">
+    SE
+   </label>
+    <label>
+    <input type="checkbox" name="Dpt" value="AI">AI
+   </label>
+    <label>
+    <input type="checkbox" name="Dpt" value="IT">IT
+   </label>
+   <br><br>
+   <label>datalist Course:
+   <input list="course" name="course">
+   <datalist id="course">
+    <option value="software engineering" name="SE"></option>
+    <option value="computer science" name="CS"></option>
+    <option value="artifcial intelligence" name="AI"></option>
+    <option value="computer science" name="CS"></option>
+   </datalist>
+   </label>
+   <br><br>
+   <label>
+   select Course:
+   <select id="course" name="course" >
+    <option value="SE">SE</option>
+    <option value="CS">CS</option>
+    <option value="AI">AI</option>
+    <option value="IT">IT</option>
+   </select>
+   </label>
+   <br><br>
+   <label>Student Photo:
+    <input type="file" name="file">
+   </label>
+   <br><br>
+   <label>Address:
+    <textarea name="address" rows="5" cols="50"></textarea>
+   </label>
+   <br><br>
+    <fieldset>
+        <legend><h3>write text about yourself:</h3></legend>
+        <textarea name="self" rows="5" cols="50"></textarea>
+    </fieldset>
+ </body>
+</html>
