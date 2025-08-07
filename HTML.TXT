@@ -7,10 +7,100 @@ doctype html
 html
 head
 title
-body        
-headings (6)   styles="property:value"( property like color ,font size ,background color),title 
+body          style(background-color)
+headings (6)   styles="color:__;background-color:__;font-family:__;font-size:100%;text-align:center;"( property like color ,font size ,background color)it is a css thing,title,class (the thing we define in the css file simply we are calling in html thing or we can define it in html head)(these are global attribute like style,lang,title,id,class,data-*(custom attribute)
 parapragh      same
+pre(for preformatted text)
 a             href
 img           src,alt,height,width
 hr(visible line)
 br(line break)
+****************************************************************************FORMATTED elements***************
+PHYSICAL                  SEMANTIC
+<b>                       <strong>
+<i>                       <em>
+<u>                       <ins>
+<s>                       <del> middle line
+<small><big> 
+<sub>(short) and <sup>(up) 
+                         <mark>
+                         <q>(short quote)
+                         <blockquote>(long quote)
+                         <dfn>
+                         <kbd>(input)
+                          <code>
+                          <var>
+                          <abbr>
+                          <samp> (sample output)
+                          <cite> (defines the title)
+***********************************************************************
+<article> : for independent use 
+<aside>: for place aside text 
+<summary> for the detail heading (used within the details
+<details>
+<figure>
+  <img>
+  <figcaption> text </>
+</figure> #image with caption
+<header>
+<footer>
+<main>
+<section>
+<nav> links in line
+*****************there are reserved sign that we use on html for different purpose but for write that in web page we have entity name and numbers like < =&lt; and also for the symbols that are not in the keyboard also to create new this table is available on geeksforgeeks usually starts from &sung,&female etc 
+<div>(for line) <span>(not take linemlike we want different styling on same line) for styling 
+*******we can use <style> in head liike <style> 
+elementid{}
+body{}
+head{}(no commas)
+.class{} (can use after like class="name" as attribute 
+</style> 
+all other tags list
+https://www.geeksforgeeks.org/html/html-tags-a-to-z-list/
+****************************************************************************HTML TABLES*************************
+elements   ********ATTRIBUTES**************
+<table>   (border,bordercolor)
+   <tr>
+       <th></th>
+<td> can be
+   </tr>
+   <tr>
+       <td></td>
+   <tr>  ******ATTRIBUTES (CSS)************
+<td><th> colspan="2",rowspan,abbr,headers(use within this heading),scope=row or col
+</table>
+<caption>
+<thead> usually used for the th
+<tbody> usually for the td
+<tfoot>  ************ATTRIBUTES*****************
+<col> <col style="property:value;",span,align,width> used styling within the colgroup
+<colgroup>
+************************************************************HTML LISTS**********************************************
+<ol><li>                 type
+<il><li>                type(1, A, a, I, and i),reversed,start
+<dl><dt><dd>
+*********************************************************************HTML FORMS******************************************
+contain some controls for submitting
+<form>     action=getor post,name,target,method
+<textarea>
+##############vertical##########
+****<input>    type=(TEXT,PASSWORD,EMAIL,SEARCH,NUMBER,DATE,RADIO,COLOR,RANGE,CHECKBOXES,FILE,SUBMIT,RESET,button),id(unique input number),value(what sent to the server),name(on which group of inputs is  belonged),placeholder(FOR SOME),required,min,max,readonly,disabled,CLASS,width,size,step,source,onlick=js function  checked after this 
+(what should be show on the form for that input button)<label for=write id of input,form=id > fww</>***** 
+##########horizontal############
+<label> <input type=radio,value(what sent to the server),name(on which group of inputs is belonged),checked)> text </> no need of id and for
+######################################
+for css :: input[type:hiwc]{}
+<button                 type=submit,button,reset> invisible button must tell te nature of button can inlcude text in it </>  
+<select>                        id,name,multiple,required,size,autofocus 
+   <option>             value,selected,disabled
+</>
+<textarea>      name,cols,rows
+<fieldset  form=form id> 
+    <legend align> (heading of the fieldset)
+<datalist id =upper input list >
+    <option/>.........
+<optgroup>
+<progress>
+
+
+
