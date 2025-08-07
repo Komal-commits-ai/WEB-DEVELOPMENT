@@ -84,7 +84,7 @@ contain some controls for submitting
 <form>     action=getor post,name,target,method
 <textarea>
 ##############vertical##########
-****<input>    type=(TEXT,PASSWORD,EMAIL,SEARCH,NUMBER,DATE,RADIO,COLOR,RANGE,CHECKBOXES,FILE,SUBMIT,RESET,button),id(unique input number),value(what sent to the server),name(on which group of inputs is  belonged),placeholder(FOR SOME),required,min,max,readonly,disabled,CLASS,width,size,step,source,onlick=js function  checked after this 
+****<input>    type=(TEXT,PASSWORD,EMAIL,SEARCH,NUMBER,DATE,RADIO,COLOR,RANGE,CHECKBOXES,FILE,SUBMIT,RESET,button),id(unique input number),value(what sent to the server if select wali cheez ho wrna na likho ),name(on which group of inputs is  belonged),placeholder(FOR SOME),required,min,max,readonly,disabled,CLASS,width,size,step,source,onlick=js function  checked after this 
 (what should be show on the form for that input button)<label for=write id of input,form=id > fww</>***** 
 ##########horizontal############
 <label> <input type=radio,value(what sent to the server),name(on which group of inputs is belonged),checked)> text </> no need of id and for
@@ -102,5 +102,11 @@ for css :: input[type:hiwc]{}
 <audio src,muted,loop,autoplay,controls,preload=auto or metadata or none>,type=audio/mpeg or ogg or wav
 <video same ,poster,width,height,type= video/mp4 or webcam
 <iframe src,name,height,weight and more
+*************labels*************
+input 
+datalist=select
+type:button=button
+textarea
+progress<value,max
 
 
