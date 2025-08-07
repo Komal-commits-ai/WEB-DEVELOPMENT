@@ -101,5 +101,6 @@ for css :: input[type:hiwc]{}
     <option/>.........
 <audio src,muted,loop,autoplay,controls,preload=auto or metadata or none>,type=audio/mpeg or ogg or wav
 <video same ,poster,width,height,type= video/mp4 or webcam
+<iframe src,name,height,weight and more
 
 
