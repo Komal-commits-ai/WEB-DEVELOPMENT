@@ -1,0 +1,34 @@
+#########################CSS#################################
+THREE TYPES:
+INLINE                  <H1 STYLE="   "
+INTERNAL                <HEAD>
+                         <STYLE>
+                            H1{}
+EXTERNAL               <link ref="stylesheet" href="style.css">
+##########################################################
+selectors
+* (all)
+type{} 
+.class {}
+#id {}
+##########################################################
+{property:value;property:value}
+property:color,background-color or image,font-size(cm,mm,m,px,%),height,width,padding-four sides(inside space cannot be negative),margin-bottom or left
+or right or top(can be negative space around word)
+1:all
+2:topbottom ,leftright
+3:top leftright bottom
+#########################################################
+pseudo_class:apply when specific thing happens
+:hover(when user place its pointer on it_
+:focus(when user click input)-visisble(only using tab)-within(target whole  form)
+:active(when an elementlike button is being clicked)
+:visited(when link is visited )
+:link(the links not visited)
+for two elements parent child relationship 
+:first or last or nth-child or nth-last-child(first line of element)
+:only-child(only  1 irrespective of type) 
+:first or last or nth or nth-last-of-type
+:only-of-type(only this type)
+:empty
+
