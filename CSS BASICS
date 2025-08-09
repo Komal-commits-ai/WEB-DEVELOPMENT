@@ -30,5 +30,8 @@ for two elements parent child relationship
 :only-child(only  1 irrespective of type) 
 :first or last or nth or nth-last-of-type
 :only-of-type(only this type)
-:empty
+:empty(lines or empty element)
+:checked(checkboxes or radio)
+:disabled(input that are disabled)
+:enabled,required,optional,valid,invalid,in-range,out-of-range,read-only,read-write
 
