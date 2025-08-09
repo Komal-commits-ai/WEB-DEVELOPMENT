@@ -8,18 +8,23 @@ EXTERNAL               <link ref="stylesheet" href="style.css">
 ##########################################################
 selectors
 * (all)
-type{} 
+element{} 
 .class {}
 #id {}
+many elements 
+parent child(whether direct and indirect)
+parent>child(direct only)
 ##########################################################
 {property:value;property:value}
-property:color,background-color or image,font-size(cm,mm,m,px,%),height,width,padding-four sides(inside space cannot be negative),margin-bottom or left
+property:color,background-color or image,font-size or weight(cm,mm,m,px,%),height,width,background-image,text-align or transform,
+border:size color
+padding-four sides(inside space cannot be negative),margin-bottom or left
 or right or top(can be negative space around word)
 1:all
 2:topbottom ,leftright
 3:top leftright bottom
 #########################################################
-pseudo_class:apply when specific thing happens
+pseudo_class(styling the actual elements):apply when specific thing happens
 :hover(when user place its pointer on it_
 :focus(when user click input)-visisble(only using tab)-within(target whole  form)
 :active(when an elementlike button is being clicked)
@@ -34,4 +39,31 @@ for two elements parent child relationship
 :checked(checkboxes or radio)
 :disabled(input that are disabled)
 :enabled,required,optional,valid,invalid,in-range,out-of-range,read-only,read-write
+###############################################################
+pseudo-elements(style the virtual elements)
+::before(add text before),after,first-line or letter,placeholder(input),marker(select),
+selection(for selected text),backdrop(back of dialog),file-selector-button(when file select button),
+spelling-error<input spellcheck="true",
+#################################################################
+POSITION:static or relative or absolute or fixed or  stick
+#################################################################
+FLEXBOX:
+html:.parent_class>.child_class*8{text}
+parent=display:flex(main axis(justify-content) and cross axis(align-items))default goes to main axis (child become vertical)
+#######################flex properties:
+flex-direction:row(d) or column or row-reverse or column-reverse,
+wrap or wrap reverse(width remain same),
+gap(in each child),
+flex-flow(for wrap and direction,
+justify-content:space-around or between or flex-end or center(equally space box),
+align-items:stretch or center or flex-start or flex-end
+align-content(space between the rows):flex-start,space-between,space-evenly
+##########################child properties:#########
+order:11 (sab se last m gae ga )
+(0)flex-grow:1 (sari space lelega)
+(1)flex-shrink:2
+flex-basis(width)
+align-self:align-items values
+##########################responsive designs(according to the screen size)#####################
+
 
