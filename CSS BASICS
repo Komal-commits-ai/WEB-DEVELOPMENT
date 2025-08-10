@@ -6,7 +6,7 @@ INTERNAL                <HEAD>
                             H1{}
 EXTERNAL               <link ref="stylesheet" href="style.css">
 ##########################################################
-selectors
+##selectors
 * (all)
 element{} 
 .class {}
@@ -14,15 +14,43 @@ element{}
 many elements 
 parent child(whether direct and indirect)
 parent>child(direct only)
+##advanced selectors
+element+sibling(right after alement) and el~all siblings after this
+element[att=jg or att or att^=kb(starts wth) or att*=ijh(contains) or att$=ufyt(ends with)]
+
+
 ##########################################################
 {property:value;property:value}
-property:color,background-color or image,font-size or weight(cm,mm,m,px,%),height,width,background-image,text-align or transform,
+property:color,background-color or image,font-size(cm,mm,in=3cm,px,pt=1/24 cm,1pc=0.45cm,
+or weight(cm,mm,m,px,%),height,width,background-image,text-align or transform,
 border:size color
 padding-four sides(inside space cannot be negative),margin-bottom or left
 or right or top(can be negative space around word)
 1:all
 2:topbottom ,leftright
 3:top leftright bottom
+POSITION:static or relative or absolute or fixed or  stick,display,whitespace:normal(handles the whitespaces and the lines break),
+overflow:hidden,visible,scroll,auto,
+text-shadow: offsetX offsetY blurRadius color;
+text-color or align or align-last or decoration(line,style,color,thickness) or decoration-color or shadow or spacing or justify,.
+opacity(transparency less than 1),center= display: block;
+        margin-left: auto;
+        margin-right: auto;
+##list##list-style-type or position or image :circle,square,circle,decimal,roman,lower-alpha,none ettc
+##table##border-collapse:collapse/separate 
+border-spacing
+caption element 
+caption-side:top/bottom
+empty-cells:show/hide
+table-layout:auto/fixed
+background-image:url()
+transition: property,duration,timing-function,delay
+#######relative units:
+em:font of parent rem=relative to html size 
+vw or vh or vmin or vmax=% of screen pixels
+%=of parent
+ch=0 and ex =relative to x of current sixe
+
 #########################################################
 pseudo_class(styling the actual elements):apply when specific thing happens
 :hover(when user place its pointer on it_
@@ -39,13 +67,13 @@ for two elements parent child relationship
 :checked(checkboxes or radio)
 :disabled(input that are disabled)
 :enabled,required,optional,valid,invalid,in-range,out-of-range,read-only,read-write
+:not()excluding anything selector
 ###############################################################
 pseudo-elements(style the virtual elements)
 ::before(add text before),after,first-line or letter,placeholder(input),marker(select),
 selection(for selected text),backdrop(back of dialog),file-selector-button(when file select button),
 spelling-error<input spellcheck="true",
 #################################################################
-POSITION:static or relative or absolute or fixed or  stick
 #################################################################
 FLEXBOX:
 html:.parent_class>.child_class*8{text}
@@ -65,5 +93,16 @@ order:11 (sab se last m gae ga )
 flex-basis(width)
 align-self:align-items values
 ##########################responsive designs(according to the screen size)#####################
-
-
+@media mediatype and (cond){{}}
+media:all,print,screen,speech
+min-or max-width:480,767,998,1024,1200,color,height,monochrome,scan,update
+#########################display properties################
+border-direction-att;
+border:width solid/dashed/dotted/groove... color
+flex
+inline:on same line
+block:vetical box
+inline-block:blocks on same line
+grid:
+none
+#############background:color,image,repeat,position,attachment,origin,
