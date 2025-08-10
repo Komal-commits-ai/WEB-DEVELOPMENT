@@ -1,1 +1,35 @@
+################JAVASCRIPT#####################
+PRINT: console.log("komal");  //comment /**/
+<script src , async(open script and i will use )/defer(script will be use when all the building is done)
+#declare:var n can be redeclared,let n,const
+#values:null,symbol(unique and immutable),bigint(n)
+#datatype:object(dict),array
+#function ;function a()
+===:type and value ==value []===[]false(reference are compared) '10'<'9'true  Nan===Nanfalse (undefined converted to NaN) infinity>100 true string+num=string bool+num=num s>n>b
+#in :exist in var or not bool
+instanceof: whether instance of data typr or not.+=concatenation
+?.:obj.address?.city for substring(same type within type)
+if else same ##switch (komal){ case "jn":}
+global variable:without let or outofblock
+console.error,warn,info,table,time,timeEnd,group,count samething called,trace,
+##############################this  and function binding ####################################
+#creating new:we can lock one function parameter and store in other function this can be used only in the object iitself when we save in ither function it loses 
+there BIND############# let function=attribute.bind(obj) instead of the obj.attr
+##########(marzi ka this)call when we create new function new(this ki jaga object dedo,arg...)
+############apply same but pass argument ike array apply(this,[dh,gcb])
+this can be acceseed only in object
+###########this always remeber its parent i the arrow fucntion
+const person = {
+    name: 'GFG',
+    greet function(){
+        const arrowGreet = () => {
+            console.log('Hello, ' + this.name); 
+        };
+        arrowGreet();
+    }
+};
+person.greet();
+#########################hoisting########################
+hoisting:declaration upper in code 
+only happens with the function and var(only declare not initialize) all are hosted but cannot be used tdz
 
