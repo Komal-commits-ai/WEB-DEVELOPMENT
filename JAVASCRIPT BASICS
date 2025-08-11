@@ -5,7 +5,8 @@ PRINT: console.log("komal");  //comment /**/
 #values:null,symbol(unique and immutable),bigint(n)
 #datatype:object(dict),array
 #function ;function a()
-===:type and value ==value []===[]false(reference are compared) '10'<'9'true  Nan===Nanfalse (undefined converted to NaN) infinity>100 true string+num=string bool+num=num s>n>b
+===:type and value ==value []===[]false(reference are compared) '10'<'9'true  Nan===Nanfalse (undefined converted to NaN)
+infinity>100 true string+num=string bool+num=num s>n>b
 #in :exist in var or not bool
 instanceof: whether instance of data typr or not.+=concatenation
 ?.:obj.address?.city for substring(same type within type)
@@ -13,8 +14,9 @@ if else same ##switch (komal){ case "jn":}
 global variable:without let or outofblock
 console.error,warn,info,table,time,timeEnd,group,count samething called,trace,
 ##############################this  and function binding ####################################
-#creating new:we can lock one function parameter and store in other function this can be used only in the object iitself when we save in ither function it loses 
-there BIND############# let function=attribute.bind(obj) instead of the obj.attr
+#creating new:we can lock one function parameter and store in other function this can be used only in the object itself 
+when we save in other function it loses there.
+#########BIND############# let function=attribute.bind(obj) instead of the obj.attr
 ##########(marzi ka this)call when we create new function new(this ki jaga object dedo,arg...)
 ############apply same but pass argument ike array apply(this,[dh,gcb])
 this can be acceseed only in object
@@ -31,5 +33,49 @@ const person = {
 person.greet();
 #########################hoisting########################
 hoisting:declaration upper in code 
-only happens with the function and var(only declare not initialize) all are hosted but cannot be used tdz
-
+only happens with the function and var(only declare not initialize) all are hosted but cannot be used tdz(temporary dead zone)
+######################closure#######################
+when we return the inner fucntino it will remember the outer variables this is closure 
+##actually the inner function remembers the variable but not this(this is run time thing)var is in memory 
+#if we want this to remenber then we use arrow fucntion
+##################scope#####################
+{}:scope of that specific thing
+let and let are {} oriented not var which has global scope 
+##############################IIFE(immediately invoked function expression)###############
+()();
+function:execution (to prevent global scope declaration)
+(function(para){})(argument); due to this the variables within this remain private 
+################################setTimeout and clearTimeout###########################
+run once after this time
+setTimeout(function,millisecond,arg.....)
+clearTimeout(var) stop the function before the time 
+##################getters,setters,const#####################
+we made the attributes inside the constructor
+get and set keywords are used consider as attribute 
+we use use to create the instance 
+dt var=new obj(parameter)
+setTimeout in obj we use bind with this 
+##############################HIGHER ORDER FUNCTION OF ARRAY#######################
+function that takes the function as argument::
+passing a function normal leeter calling letter()
+array.map(function)   map this fucntion to all elements of the array
+array.filter(function(return only true or false)) returns the elements where the fucntion returns true
+array.reduce(fucntion, initialValue of acc);
+reduce function:function(accumulator, currentValue) {}
+array.forEach(funtion) not create new array
+array.find(function) return first element at which cond is true 1 element
+array.some(funtion) return true or false whether any element satisfy the condition
+array.every()    return true or false whehter every elemnt satisfy or not 
+#########function composition:
+function compose(f, g) {
+    return function(x) {
+        return f(g(x));
+  };
+##########function currying:
+divide the parameters into single parameter with multiple function
+function mul(x) {
+    return function(y) {
+        return x * y;
+  };
+}
+###########
