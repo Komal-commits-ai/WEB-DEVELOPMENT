@@ -79,4 +79,84 @@ function mul(x) {
   };
 }
 #############link with the html############
+let var=document.getElementById or classname or tagname or querySelector or querySelectorAll("")
+              
+########methods of the js#####
+=>alert()   on browsre pop up sms
+=>.addEventHandler(event=click,mouseover,keydown,submit,load,function(),usecapture)
+usecapture:true(first the window will know)
+flase(first the element will know)
+=>.removeEventHandler(event=click,mouseover,keydown,submit,load,function(e))
+*******************e***************8
+event.key        // The actual character pressed ("a", "Enter", "ArrowUp")
+event.code       // Physical key location ("KeyA", "Enter", "ArrowUp")
+event.which      // Deprecated - use .key or .code instead
+event.ctrlKey    // Boolean - was Ctrl pressed?
+event.shiftKey   // Boolean - was Shift pressed?
+event.altKey     // Boolean - was Alt pressed?
+event.metaKey    // Boolean - was Command (Mac) or Windows key pressed?
+event.repeat     // Boolean - is this from holding down a key?
+event.target     // The element that triggered the event (inputField)
+event.currentTarget // The element the listener is attached to
+event.type       // The event type ("keyup", "click", etc.)
+event.timeStamp  // When the event occurred (milliseconds)
+event.bubbles    // Boolean - does this event bubble up?
+=>event.preventDefault()browser default action
+=>event.stopPropagation() event flow
+###########################DOM(tree structure)#############
+textchange*******element.textContent or innerHTML(change the text content) or
+attribute*****element.src etcccc
+create*********element.createElement and then append this by document.body.appendChild(element)
+remove**********remove()
+###########javascript works with the BOM and DOM
+**********transversing:
+=>parentNode
+=>children
+=>firstChild / lastChild
+=>nextSibling / previousSibling
+##############class add#########
+element.classList.add()
+element.classList.remove() or toggle()
+list.insertBefore(newItem, list.children[1]);
+################ATTRIBUTES#############
+getAttribute(): Retrieves the value of an attribute.
+setAttribute(): Sets a new value for an attribute.
+removeAttribute(): Removes an attribute
+dataset.att (adding new attribute)
+classback=In JavaScript, a callback is just a function you give to another function, saying:
+
+“Hey, when you’re done, run this for me.” and function can be given changing
+#########################
+promise##
+Promise: You get a “magic box” now and can check later whether it gave you cookies or not.
+
+###########################REGULAR EXPRESSION########################
+new RegExp(pattern,flag) class
+#####METHODS################
+f you want true/false → use .test()
+If you want match details → use .exec() or .match()
+If you want positions → use .search()
+If you want to change text → use .replace() or .replaceAll()
+If you want to break text apart → use .split()
+
+
+between slashes /like this/
+\d → any digit (0-9)
+\w → any letter or number
+. → any single character
+* → repeat 0 or more times (bhle na bhi ho) 
++ → repeat 1 or more times (aik dafa to ho)
+?-> 0 or 1 
+^ → start of text between if 
+$ → end of text
+m{X, Y}	Find the match of any string that contains a sequence of m, X to Y times
+if not want to make the specific function use the \ before that
+#####flag after the / of regex
+Flag	Name	What it does
+g	Global	Finds all matches, not just the first one.
+i	Ignore case	Matches A and a the same way.
+m	Multiline	Makes ^ and $ match the start/end of each line, not just the whole string.
+s	Dotall	Makes . match newline characters too. Without s, . stops at a line break.
+u	Unicode	Treats the pattern as Unicode, so you can match emoji, special characters, etc. correctly.
+y	Sticky	Matches from the exact position you left off last time (no skipping ahead).
 
