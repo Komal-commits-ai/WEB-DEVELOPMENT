@@ -69,7 +69,7 @@ for two elements parent child relationship
 :enabled,required,optional,valid,invalid,in-range,out-of-range,read-only,read-write
 :not()excluding anything selector
 ###############################################################
-pseudo-elements(style the virtual elements)
+pseudo-elements
 ::before(add text before),after,first-line or letter,placeholder(input),marker(select),
 selection(for selected text),backdrop(back of dialog),file-selector-button(when file select button),
 spelling-error<input spellcheck="true",
