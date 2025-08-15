@@ -184,5 +184,29 @@ style different frames of the animation
 100% or to{last style}
 always define from and to......
 
-
-#################transform
+#################transform############
+transform: element in the 2D or 3D
+2D///////////////////
+translate(x,y)move to x and y axis.
+rotate(angle)
+scale(xs,ys)or(s) 1 is original size write relative to 1.
+Syntax: skew(ax, ay) or skewX(ax)/skewY(ay)
+3D/////////////////////
+translate3d(tx, ty, tz)
+rotate3d(x, y, z, angle)
+scale3d(sx, sy, sz)
+#######matrix#####
+/* matrix(a, b, c, d, tx, ty) where:
+a = scaleX (1 = 100%)
+b = skewY (0.5 = 26.5°)
+c = skewX (-0.5 = -26.5°)
+d = scaleY (1 = 100%)
+tx = translateX (0px)
+ty = translateY (0px) *
+#######
+transform: matrix3d(
+1,0,0,0,
+0,1,0,0,
+0,0,1,0,
+0,0,100,1
+);
