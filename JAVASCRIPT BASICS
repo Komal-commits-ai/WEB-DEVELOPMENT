@@ -159,4 +159,30 @@ m	Multiline	Makes ^ and $ match the start/end of each line, not just the whole s
 s	Dotall	Makes . match newline characters too. Without s, . stops at a line break.
 u	Unicode	Treats the pattern as Unicode, so you can match emoji, special characters, etc. correctly.
 y	Sticky	Matches from the exact position you left off last time (no skipping ahead).
+########################Animation######################
+animation: name,duration,timing-function,delay,iteration-count ,direction ,fill-mode ,play-state(running,paused)
+####timing-function:
+ease (default, starts fast, slows down)
+ease-out (starts fast, ends slowly)
+ease-in (starts slow, ends fast)
+linear (constant speed)
+cubic-bezier(0.1, 0.7, 1.0, 0.1) (custom curve)
+####animation-direction:
+normal (default, plays forward)
+reverse (plays backward)
+alternate (forward then backward)
+alternate-reverse (backward then forward)
+####fill-mode:
+none (default, no styles applied)
+forwards (keeps end-state styles)
+backwards (applies first keyframe during delay)
+both (both forwards and backwards)
+##################@keyframes###########
+style different frames of the animation 
+0% or from{starting style}
+50%{middle style}
+100% or to{last style}
+always define from and to......
 
+
+#################transform
