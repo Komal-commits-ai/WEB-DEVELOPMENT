@@ -136,9 +136,9 @@ body {
 
 .next, .back {
   padding: 10px 20px;
-  margin-top:10px;
-  margin-bottom:10px;
-  width:100px;
+  margin-top:20px;
+  margin-bottom:20px;
+  width:110px;
   border-radius: 20px;
   background-color: var(--button-purple);
   color: var(--color-tetsu-guro-black);
@@ -147,6 +147,16 @@ body {
   cursor: pointer;
   font-family: Arial Black, sans-serif;
   transition: all 0.3s ease;
+}
+.next{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.back{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 .next:hover, .back:hover {
@@ -291,4 +301,5 @@ body {
     padding: 8px 10px;
   }
 }
+
 
