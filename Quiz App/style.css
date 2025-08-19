@@ -136,6 +136,9 @@ body {
 
 .next, .back {
   padding: 10px 20px;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:100px;
   border-radius: 20px;
   background-color: var(--button-purple);
   color: var(--color-tetsu-guro-black);
@@ -288,3 +291,4 @@ body {
     padding: 8px 10px;
   }
 }
+
