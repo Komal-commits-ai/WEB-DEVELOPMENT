@@ -30,7 +30,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* make footer align at bottom */
+  justify-content: space-between;
 }
 
 #timer {
@@ -54,16 +54,6 @@ body {
   color: #281414;
 }
 
-.pop {
-  animation: pop 0.3s ease;
-}
-
-@keyframes pop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
-}
-
 #ans-btns {
   display: flex;
   justify-content: space-between;
@@ -71,36 +61,6 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   flex-wrap: wrap;
-}
-
-#mark-sms {
-  animation: popIn 0.6s ease-out forwards;
-  opacity: 0;
-}
-
-#remarks {
-  animation: popIn 0.6s ease-out 0.3s forwards;
-  opacity: 0;
-}
-
-#marks {
-  animation: popIn 0.6s ease-out 0.6s forwards;
-  opacity: 0;
-}
-
-@keyframes popIn {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 .button {
@@ -125,18 +85,22 @@ body {
   background-color: #502814;
 }
 
-/* Navigation buttons wrapper */
+/* ✅ Navigation buttons always left & right */
 .nav-buttons {
   display: flex;
-  justify-content: space-between; /* left & right */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: auto;
   padding: 10px 15px;
+  margin-top: auto;
 }
 
-.next, .back {
-  position: static; /* not absolute anymore */
+.back {
+  margin-right: auto;   /* push back to far left */
+}
+
+.next {
+  margin-left: auto;    /* push next to far right */
 }
 
 .st {
@@ -211,10 +175,6 @@ body {
 
   #table {
     font-size: 14px;
-  }
-
-  .nav-buttons {
-    padding: 10px;
   }
 }
 
