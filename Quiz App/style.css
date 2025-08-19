@@ -150,13 +150,13 @@ body {
 }
 .next{
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 20%;
+  bottom: 20%;
 }
 .back{
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 20%;
+  bottom: 20%;
 }
 
 .next:hover, .back:hover {
@@ -301,5 +301,6 @@ body {
     padding: 8px 10px;
   }
 }
+
 
 
