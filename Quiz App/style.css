@@ -1,7 +1,3 @@
-I've reviewed your CSS code and will make adjustments to ensure it works well on mobile devices while preserving the original structure.
-
-Here's the updated CSS code with added media queries for mobile responsiveness:
-
 
 :root {
   --color-tetsu-guro-black: #281414;
@@ -162,3 +158,4 @@ body {
     height: auto;
     padding: 10px;
   }
+
