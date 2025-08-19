@@ -28,6 +28,9 @@ body {
   padding: 10px 20px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* make footer align at bottom */
 }
 
 #timer {
@@ -67,6 +70,7 @@ body {
   gap: 50px;
   padding-left: 10%;
   padding-right: 10%;
+  flex-wrap: wrap;
 }
 
 #mark-sms {
@@ -121,16 +125,18 @@ body {
   background-color: #502814;
 }
 
-.next {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+/* Navigation buttons wrapper */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between; /* left & right */
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 10px 15px;
 }
 
-.back {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+.next, .back {
+  position: static; /* not absolute anymore */
 }
 
 .st {
@@ -181,27 +187,21 @@ body {
 
   #ans-btns {
     flex-direction: column;
-    align-items: stretch; /* buttons same width */
+    align-items: stretch; 
     gap: 15px;
     padding: 0;
   }
 
   .button {
-    width: auto;             /* allow expansion */
-    min-width: 60%;          /* nice consistent size */
+    width: auto;
+    min-width: 60%;
     max-width: 90%;
     height: auto;
     font-size: medium;
     padding: 12px 18px;
-    white-space: normal;     /* wrap naturally */
+    white-space: normal;
     word-wrap: break-word;
     text-align: center;
-  }
-
-  .next, .back {
-    position: static;
-    margin: 10px auto;
-    display: block;
   }
 
   #timer {
@@ -211,6 +211,10 @@ body {
 
   #table {
     font-size: 14px;
+  }
+
+  .nav-buttons {
+    padding: 10px;
   }
 }
 
