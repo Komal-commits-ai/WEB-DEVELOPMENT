@@ -28,7 +28,7 @@ body {
   padding: 10px 20px;
   margin: 0 auto;
   position: relative;  
-  padding-bottom: 90px; /* ✅ space for nav buttons */
+  padding-bottom: 90px; /* space for nav buttons */
 }
 
 #timer {
@@ -102,13 +102,21 @@ body {
     width: 90vw;
     height: auto;
     padding: 15px;
-    padding-bottom: 100px; /* ✅ ensures nav buttons don’t overlap options */
+    padding-bottom: 120px; /* extra space for nav buttons */
+  }
+
+  #timer {
+    top: 5px;       /* move higher */
+    right: 10px;    /* adjust position */
+    width: 100px;   /* smaller */
+    height: 25px;   /* smaller */
+    font-size: 12px;
   }
 
   #question {
     font-size: medium;
     width: 100%;
-    padding: 10px;
+    padding: 50px 10px 10px; /* ✅ pushes question down so it never overlaps timer */
     height: auto;
   }
 
@@ -130,11 +138,11 @@ body {
     text-align: center;
   }
 
-  /* ✅ Smaller nav buttons only on mobile */
+  /* ✅ Much smaller nav buttons on mobile */
   .next, .back {
-    width: 70px;   /* reduced width */
-    height: 45px;  /* smaller height */
-    font-size: 13px;
+    width: 55px;
+    height: 35px;
+    font-size: 11px;
     bottom: 15px;
   }
 }
@@ -142,11 +150,12 @@ body {
 @media (max-width: 480px) {
   .container {
     width: 95vw;
-    padding-bottom: 110px; /* ✅ extra space for very small screens */
+    padding-bottom: 130px; /* more space for nav buttons */
   }
 
   #question {
     font-size: small;
+    padding-top: 60px; /* push further below timer */
   }
 
   .button {
@@ -154,11 +163,19 @@ body {
     padding: 10px 14px;
   }
 
-  /* ✅ Even smaller nav buttons on tiny screens */
+  /* ✅ Even smaller nav buttons on very small screens */
   .next, .back {
-    width: 60px;
-    height: 40px;
-    font-size: 12px;
+    width: 45px;
+    height: 30px;
+    font-size: 10px;
     bottom: 12px;
+  }
+
+  #timer {
+    width: 90px;
+    height: 22px;
+    font-size: 11px;
+    top: 5px;
+    right: 5px;
   }
 }
