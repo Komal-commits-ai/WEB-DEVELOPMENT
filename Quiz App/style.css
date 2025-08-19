@@ -27,8 +27,7 @@ body {
   text-align: center;
   padding: 10px 20px;
   margin: 0 auto;
-  position: relative;  
-  padding-bottom: 90px; /* space for nav buttons */
+  position: relative;
 }
 
 #timer {
@@ -52,17 +51,56 @@ body {
   color: #281414;
 }
 
+.pop {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
 #ans-btns {
   display: flex;
   justify-content: space-between;
   gap: 50px;
   padding-left: 10%;
   padding-right: 10%;
-  flex-wrap: wrap;
+}
+
+#mark-sms {
+  animation: popIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+#remarks {
+  animation: popIn 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+#marks {
+  animation: popIn 0.6s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .button {
-  font-family: Arial black;
+  font-family: Arial Black;
   font-size: smaller;
   text-align: center;
   width: 110px;
@@ -76,14 +114,13 @@ body {
 
 .button:hover {
   background-color: #c8b428;
-  transform: translate(10px, 5px) scale(1.15);
+  transform: translate(10px,5px) scale(1.15);
 }
 
 .button:active {
   background-color: #502814;
 }
 
-/* ✅ Navigation buttons always bottom left & right */
 .next {
   position: absolute;
   right: 20px;
@@ -96,85 +133,118 @@ body {
   bottom: 20px;
 }
 
+.st {
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: larger;
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: auto;
+  font-size: 16px;
+  box-shadow: 0 5px 15px var(--color-tetsu-guro-black); 
+  border-radius: 8px;
+  overflow: hidden; 
+  background-color: rgb(177, 101, 177);
+}
+
+#table th {
+  text-align: left;
+  padding: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 4px solid var(--color-grass-daisy);
+  background-color: rgb(178, 56, 202);
+}
+
+#table td {
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--color-grass-daisy);
+}
+
 /* 📱 Mobile Responsive Fixes */
 @media (max-width: 768px) {
   .container {
     width: 90vw;
     height: auto;
     padding: 15px;
-    padding-bottom: 120px; /* extra space for nav buttons */
+    padding-bottom: 120px; /* space for nav buttons */
   }
 
   #timer {
-    top: 5px;       /* move higher */
-    right: 10px;    /* adjust position */
-    width: 100px;   /* smaller */
-    height: 25px;   /* smaller */
+    top: 5px;       
+    right: 10px;    
+    width: 90px;   
+    height: 22px;   
     font-size: 12px;
   }
 
   #question {
     font-size: medium;
     width: 100%;
-    padding: 50px 10px 10px; /* ✅ pushes question down so it never overlaps timer */
+    padding: 55px 10px 10px; /* push down below timer */
     height: auto;
   }
 
   #ans-btns {
     flex-direction: column;
-    align-items: stretch; 
-    gap: 15px;
+    align-items: center;   /* ✅ center align */
+    gap: 12px;
     padding: 0;
   }
 
   .button {
     width: auto;
-    min-width: 60%;
-    max-width: 90%;
+    min-width: 120px;
+    max-width: 200px;
     height: auto;
-    font-size: medium;
-    padding: 12px 18px;
-    white-space: normal;
+    font-size: small;
+    padding: 10px 12px;
+    background-color: rgb(239, 197, 248); /* keep background */
     text-align: center;
+    white-space: normal;
   }
 
-  /* ✅ Much smaller nav buttons on mobile */
   .next, .back {
-    width: 55px;
-    height: 35px;
+    width: 50px;
+    height: 32px;
     font-size: 11px;
-    bottom: 15px;
+    bottom: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
     width: 95vw;
-    padding-bottom: 130px; /* more space for nav buttons */
+    padding-bottom: 130px;
   }
 
   #question {
     font-size: small;
-    padding-top: 60px; /* push further below timer */
+    padding-top: 65px;
   }
 
   .button {
     font-size: small;
-    padding: 10px 14px;
+    padding: 8px 10px;
+    min-width: 100px;
+    max-width: 160px;
+    background-color: rgb(239, 197, 248);
   }
 
-  /* ✅ Even smaller nav buttons on very small screens */
   .next, .back {
-    width: 45px;
-    height: 30px;
-    font-size: 10px;
-    bottom: 12px;
+    width: 40px;
+    height: 28px;
+    font-size: 9px;
+    bottom: 10px;
   }
 
   #timer {
-    width: 90px;
-    height: 22px;
-    font-size: 11px;
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
     top: 5px;
     right: 5px;
   }
