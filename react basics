@@ -1,2 +1,23 @@
 ############branch############
 make the copy and work on it and then pull request to check whether it is correct or not and the merge if it is correct then merge branch to main..
+##component k andar sab kuch return m likhna h 
+############################################WAYS of exporting:
+1)export default function name(){return(.......)}
+2)function name{return(....)} 
+    export default name
+3)export const name=()=>{(return.......)}
+###const keyword in the arrow function
+##########################################DEFAULT EXPORT AND IMPORT(keyword default)
+when there is only one sharing(no need of same name)
+export default name
+import name(any) from './App.jsx'
+
+###########################################NAMED EXPORT AND IMPORT(default{} curly braces)
+export{name as different name} 
+import{name } from "ih"
+###########################################
+simple use default when we want to use different name.
+use {} if we want same name or multiple functions. and not default with the normal function.
+##we can use different named components in main default component
+##################################JSX:javascript XML (JS+HTML) can use javascript variables in jsx {} 
+create variables and store the html
