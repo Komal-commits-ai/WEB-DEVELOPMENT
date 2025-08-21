@@ -21,3 +21,35 @@ use {} if we want same name or multiple functions. and not default with the norm
 ##we can use different named components in main default component
 ##################################JSX:javascript XML (JS+HTML) can use javascript variables in jsx {} 
 create variables and store the html
+html in only return 
+by functions and exporting we are basically creating the tags 
+#################making tags############
+<tag atrributes>content<tag close>
+making###########function tag(component) name(support){return <> 
+{support.children} from content within and 
+{support.attribute(prop)} it can be called as variable can be use as a template in this tag </>}
+can be a tag and template
+#########################PROPTYPES################
+Adding restrictions to the function 
+// Add this AFTER your component definition
+UserProfile.propTypes = {
+  name: PropTypes.string.isRequired,      // Must be string, required
+  age: PropTypes.number,                  // Must be number, optional
+  email: PropTypes.string.isRequired,     // Must be string, required
+  isVerified: PropTypes.bool              // Must be boolean, optional
+oneOf([])
+oneOfType([])
+};
+##########################hooks??
+**************************useState :when variable is displayed on the page and its value is changing 
+one parameter:initial value
+two return=value,function to change value 
+***************************useEffect :when we want to run the function with conditions
+useEffect(callback function, and condition to run)
+1)[]:run only one time when compt mount agr unmount pr chlana h to callback k andar likhdo return function
+2)[var]:jab variabl change ho iske andar bhi hm return function likhskhte h 
+3)nothing:every change infinite times 
+events??
+#############################################USE TAILWIND CSS##################
+we can use built-in classes of tailwind by using className and every tag is a closing tag one tag is always closed like <tag/>
+
