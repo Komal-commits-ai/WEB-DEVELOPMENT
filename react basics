@@ -46,9 +46,9 @@ one parameter:initial value
 two return=value,function to change value 
 ***************************useEffect :when we want to run the function with conditions
 useEffect(callback function, and condition to run)
-1)[]:run only one time when compt mount agr unmount pr chlana h to callback k andar likhdo return function
+1)[]:run only one time after render
 2)[var]:jab variabl change ho iske andar bhi hm return function likhskhte h 
-3)nothing:every change infinite times 
+3)nothing:just like normal function run after every render 
 events??
 #############################################USE TAILWIND CSS##################
 we can use built-in classes of tailwind by using className and every tag is a closing tag one tag is always closed like <tag/>
