@@ -210,3 +210,23 @@ transform: matrix3d(
 0,0,1,0,
 0,0,100,1
 );
+#########################running#########################
+normal:
+stop the html parsing when script comoes load and apply then continue.(synchronous)
+async:::::::(not stop html parsing) download the script side by side and when load apply (problems come)............................
+defer:::::::(not stop html parsing) download the script side by side and apply at the end of html parsing in order...........
+#################################*******************THIS*******************############################
+this depends on how it was called not how it was created. regular function this=own fucntion(aise hi oara rhta h 
+jab function call hota h tab decide hota h k kon h this) arrow function this=parent if regular fucntion called correctly
+it is then right otherwise lost..... 
+problem solution::arrow function this  always contain parent ,not forget.. if we transfer to another variable it will...
+                     if we want to transfer the function to another variable use arrow fucntion .its this is more sharp.
+RULES###############
+1).function called in the global has this=window and in class function within the fucntion because the inner function is calling as the normal function ()
+2).this in class obj.fucntion this=obj
+3).creating new obj with new keyword it will contain the this of new object 
+4).explicit binding :call,apply and bind 
+bind stores in other variable while giving this like var= function.bind(this)
+apply and call immediately call function like function.call(this)
+
+
