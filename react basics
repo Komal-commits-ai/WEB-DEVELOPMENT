@@ -52,6 +52,11 @@ useEffect(callback function, and condition to run)
 actually two world the react world and outside world if you write in dom after every render react handle this chnage only the thing what is neceesary 
 but outside world you control that react actually wrinting this again and again so you have to mange if you go outside the react world all this problem that 
 when state change rerendering occur that constant but react can control dom but not the outside world........
+##############React Controls: ✅
+Component rendering 🖼️
+State updates 🎯
+Virtual DOM changes ⚛️
+Props passing 📦
 events??
 #############################################USE TAILWIND CSS##################
 we can use built-in classes of tailwind by using className and every tag is a closing tag one tag is always closed like <tag/>
