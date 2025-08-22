@@ -41,9 +41,14 @@ oneOf([])
 oneOfType([])
 };
 ##########################hooks??
-**************************useState :when variable is displayed on the page and its value is changing 
+**************************useState 
+javascript code rerun on each rerender and react does not know about the js variable therefore changes in it does not cause the re render
+so useState: when there is value persistance and rerendering required.
 one parameter:initial value
 two return=value,function to change value 
+**************************useRef******************************
+when we want only value persistance.
+const var=useRef(initial val) return obj that contain the atttribute .current
 ***************************useEffect :when we want to run the function with conditions
 useEffect(callback function, and condition to run)
 1)[]:run only one time after render
