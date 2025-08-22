@@ -49,6 +49,7 @@ two return=value,function to change value
 **************************useRef******************************
 when we want only value persistance.
 const var=useRef(initial val) return obj that contain the atttribute .current
+can directly change value of the variable can also store tag in this var <tag ref={var}/>
 ***************************useEffect :when we want to run the function with conditions
 useEffect(callback function, and condition to run)
 1)[]:run only one time after render
