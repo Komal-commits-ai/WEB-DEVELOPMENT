@@ -63,10 +63,14 @@ Component rendering 🖼️
 State updates 🎯
 Virtual DOM changes ⚛️
 Props passing 📦
+############################memo 
+if we want js component to memorize the answer....
 **************************UseMemo 
 when we want to control js function memorize its ans ,stores in variable...
 useMemo(funtion(),[]
 *********************************createContext() and useContext ?????????????????????????????????
 #############################################USE TAILWIND CSS##################
 we can use built-in classes of tailwind by using className and every tag is a closing tag one tag is always closed like <tag/>
+######################LOCAL STORAGE########
+
 
