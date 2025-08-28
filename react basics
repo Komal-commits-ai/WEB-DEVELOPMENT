@@ -1,3 +1,4 @@
+rfce(comp shoertcut)
 ############branch############
 make the copy and work on it and then pull request to check whether it is correct or not and the merge if it is correct then merge branch to main..
 ##component k andar sab kuch return m likhna h 
@@ -69,8 +70,18 @@ if we want js component to memorize the answer....
 when we want to control js function memorize its ans ,stores in variable...
 useMemo(funtion(),[]
 *********************************createContext() and useContext ?????????????????????????????????
+many child in the app.we will then do prop dilling.
+ export const num=createContext() num.provider.value in the tag in which component present in the app and myname=useContext(num) in the child use myname in the child  
 #############################################USE TAILWIND CSS##################
 we can use built-in classes of tailwind by using className and every tag is a closing tag one tag is always closed like <tag/>
-######################LOCAL STORAGE########
+######################design pattern########
+=>wrote a book with 23 common design pattern and group them into three
+structural pattern (combine the objects and classes in smart way)
+creational pattern (create objects in smart way 
+behavioural pattern (solve the problem in a smart way)
+repository design pattern:make separate object with functions  who is taking to the local storage or server just add object fucntion  in the app
+it is js file only handle data 
+
+
 
 
