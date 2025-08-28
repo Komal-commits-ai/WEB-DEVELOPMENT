@@ -81,7 +81,7 @@ creational pattern (create objects in smart way
 behavioural pattern (solve the problem in a smart way)
 repository design pattern:make separate object with functions  who is taking to the local storage or server just add object fucntion  in the app
 it is js file only handle data 
-
+API:like a waitor arrange meetings within two systems..
 
 
 
