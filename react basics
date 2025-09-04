@@ -110,8 +110,11 @@ element:<about/>
 {
 path:"/dash",
 element:<dash/>
+children:[{
+path:no /
+},{},{}]
 }
-])
+]for children add the outlet in the parent component before div end
 now give this router to the app 
 <RouterProvider router={router}/>
 
@@ -119,6 +122,11 @@ now we should attach that created url to the text by using <a/> but it will load
 So,basically i need <Link to > or <NavLink to >
             iske andar hoga isActive (boolean) isko use krk styling krskte h 
 #################################Pass parameters when creating the links or the routes
+if variable then use with the :id like
+useNavigate
+const nav=useNavigate();
+nav(path) is path pr move krjao 
+
 
 
 
