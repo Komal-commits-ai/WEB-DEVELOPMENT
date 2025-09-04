@@ -82,6 +82,43 @@ behavioural pattern (solve the problem in a smart way)
 repository design pattern:make separate object with functions  who is taking to the local storage or server just add object fucntion  in the app
 it is js file only handle data 
 API:like a waitor arrange meetings within two systems..
+#################routing######################
+multiple pages handling.
+We will use React Router library.
+                                         <BrowserRouter>
+                                        or <HashRouter>
+                                               <Routes>
+                                                    <route path/>
+                                                    <route path/>
+                                                    <route path/>
+                                                </Routes>
+                                               <Link><Link> create navigational link in this  
+                                               <NavLink><NavLink> link with some styling
+#########################################################new one 
+createBrowserRouter
+RouterProvider
+const router=createBrowserRouter(
+[
+{
+path:"/",
+element:<Home/>
+},
+{
+path:"/about",
+element:<about/>
+}, 
+{
+path:"/dash",
+element:<dash/>
+}
+])
+now give this router to the app 
+<RouterProvider router={router}/>
+
+now we should attach that created url to the text by using <a/> but it will load whole page.
+So,basically i need <Link to > or <NavLink to >
+            iske andar hoga isActive (boolean) isko use krk styling krskte h 
+#################################Pass parameters when creating the links or the routes
 
 
 
